@@ -1,71 +1,50 @@
 # Documentation
 
-The documentation for this years Hackathon must be provided as a readme in Markdown format as part of your submission. 
-
-You can find a very good reference to Github flavoured markdown reference in [this cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). If you want something a bit more WYSIWYG for editing then could use [StackEdit](https://stackedit.io/app) which provides a more user friendly interface for generating the Markdown code. Those of you who are [VS Code fans](https://code.visualstudio.com/docs/languages/markdown#_markdown-preview) can edit/preview directly in that interface too.
-
-Examples of things to include are the following.
+The main purpose behind this module is to provide the user with a map that has the ability to search for directions between two places, and show suggested routes if exists. It also shows the estimated time for every route, plus directions in details. 
+The input boxes that enables the user to enter the source and destination are autocomplete boxes. This gives the flexibility for the user to determine the exact location he is looking for.
+There is also a functionality that enables the user to set the “Source” field to his current location by clicking on “Use My Current Location”. 
+The module is based on Google Maps APIs, so the user has the ability also to view the map in several views (Traffic, Map, Satellite).
 
 ## Summary
 
-**Category:** Hackathon Category
-
-What is the purpose of your module? What problem does it solve and how does it do that?
+**Category:** SXA
 
 ## Pre-requisites
 
 Does your module rely on other Sitecore modules or frameworks?
 
-- List any dependencies
-- Or other modules that must be installed
-- Or services that must be enabled/configured
-
-## Installation
-
-Provide detailed instructions on how to install the module, and include screenshots where necessary.
-
-1. Use the Sitecore Installation wizard to install the [package](#link-to-package)
-2. ???
-3. Profit
-
-## Configuration
-
-How do you configure your module once it is installed? Are there items that need to be updated with settings, or maybe config files need to have keys updated?
-
-Remember you are using Markdown, you can provide code samples too:
-
-```xml
-<?xml version="1.0"?>
-<!--
-  Purpose: Configuration settings for my hackathon module
--->
-<configuration xmlns:patch="http://www.sitecore.net/xmlconfig/">
-  <sitecore>
-    <settings>
-      <setting name="MyModule.Setting" value="Hackathon" />
-    </settings>
-  </sitecore>
-</configuration>
+- Sitecore Experience Accelerator 1.6 rev. 180103 
+- Sitecore PowerShell Extensions-4.7.2
 ```
 
 ## Usage
 
-Provide documentation  about your module, how do the users use your module, where are things located, what do icons mean, are there any secret shortcuts etc.
+In order for the user to be able to use our module, he has to specify a key for the map which should be stored under the following path:
+[Your site path] /Settings/Maps Provider
+After that, he can simply drag and drop the Directions Map from the SXA toolbox that resides under the “Interactive Maps” category and select the Maps Provider as data source.
+ 
+Screenshots:
+Setting the key for the google maps API is the first step the user should do. Below is a screenshot of the location of the Map Provider setting that would have this key. It would be located at the following path: 
+[Your site path] /Settings/Maps Provider
 
-Please include screenshots where necessary. You can add images to the `./images` folder and then link to them from your documentation:
+![p1](images/p1.png?raw=true "p1")
 
-![Hackathon Logo](images/hackathon.png?raw=true "Hackathon Logo")
+You can find our Directions Map under the Sitecore Experience Accelerator toolbox under “Interactive Maps” tab. Below is a screenshot that shows you the popup that would appear after you drag and drop the Directions Map into your placeholder. This popup allows the user to select the Map Provider item as a data source.
 
-You can embed images of different formats too:
+![p2](images/p2.png?raw=true "p2")
 
-![Deal With It](images/deal-with-it.gif?raw=true "Deal With It")
+Below is a look and feel of the Directions Map in the experience editor mode:
 
-And you can embed external images too:
+![p3](images/p3.png?raw=true "p3")
 
-![Random](https://placeimg.com/480/240/any "Random")
+After saving and publishing your item, you can start using our control, by setting the source and destination in the autocomplete fields, and click on “Get Directions”. You can collapse the Directions Input Control on the side by clicking on the top right arrow. “Clear All” button clears out the fields and the directions in order to start a new search.
+
+![p4](images/p4.png?raw=true "p4")
+
+What’s Next:
+1-	Improve the code and ajax calls to follow the best practice.
+2-	Add variant to the render.
+3-	Inject the css in the theme.
+4-	Design modifications.
 
 ## Video
-
-Please provide a video highlighing your Hackathon module submission and provide a link to the video. Either a [direct link](https://www.youtube.com/watch?v=EpNhxW4pNKk) to the video, upload it to this documentation folder or maybe upload it to Youtube...
-
-[![Sitecore Hackathon Video Embedding Alt Text](https://img.youtube.com/vi/EpNhxW4pNKk/0.jpg)](https://www.youtube.com/watch?v=EpNhxW4pNKk)
