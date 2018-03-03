@@ -20,7 +20,7 @@ Does your module rely on other Sitecore modules or frameworks?
 - Sitecore PowerShell Extensions-4.7.2
 
 
-##Usage
+## Usage
 
 In order for the user to be able to use our module, he has to specify a key for the map which should be stored under the following path:
 [Your site path] /Settings/Maps Provider
@@ -45,9 +45,9 @@ After saving and publishing your item, you can start using our control, by setti
 ![p4](images/p4.png?raw=true "p4")
 
 What’s Next:
-1-	Improve the code and ajax calls to follow the best practice.
-2-	Add variant to the render.
-3-	Inject the css in the theme.
-4-	Design modifications.
+- Improve the code and ajax calls to follow the best practice.
+- Add variant to the render.
+- Inject the css in the theme.
+- Design modifications.
 
 ## Video
