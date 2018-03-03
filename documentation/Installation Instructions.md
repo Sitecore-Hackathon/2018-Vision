@@ -1,13 +1,16 @@
 
 The following document shows the prerequisites of the “Directions Map” feature and how to install it:
-Prerequisites: 
-1-	Sitecore 9 update1
-2-	Sitecore Experience Accelerator 1.6 rev. 180103 
-3-	Sitecore PowerShell Extensions-4.7.2
-Steps:
-1-	Install the package "Interactive Map.zip" that is provided.
-2-	Create your Tenant and site.
-3-	In order to add the Interactive Map to your site toolbox, you can run the following PowerShell script and make sure to replace the site name with your site name:
+
+## Pre-requisites:
+
+- Sitecore 9 update1
+- Sitecore Experience Accelerator 1.6 rev. 180103 
+- Sitecore PowerShell Extensions-4.7.2
+
+## Steps:
+- Install the package "Interactive Map.zip" that is provided.
+- Create your Tenant and site.
+- In order to add the Interactive Map to your site toolbox, you can run the following PowerShell script and make sure to replace the site name with your site name:
  
 /sitecore/system/Modules/PowerShell/Script Library/Interactive Map Module/Add Interactive Map to site
 
