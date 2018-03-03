@@ -1,8 +1,11 @@
 # Documentation
 
 The main purpose behind this module is to provide the user with a map that has the ability to search for directions between two places, and show suggested routes if exists. It also shows the estimated time for every route, plus directions in details. 
+
 The input boxes that enables the user to enter the source and destination are autocomplete boxes. This gives the flexibility for the user to determine the exact location he is looking for.
+
 There is also a functionality that enables the user to set the “Source” field to his current location by clicking on “Use My Current Location”. 
+
 The module is based on Google Maps APIs, so the user has the ability also to view the map in several views (Traffic, Map, Satellite).
 
 ## Summary
