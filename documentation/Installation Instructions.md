@@ -14,7 +14,7 @@ The following document shows the prerequisites of the “Directions Map” featu
  
 /sitecore/system/Modules/PowerShell/Script Library/Interactive Map Module/Add Interactive Map to site
 
---Image
+![p5](images/p1.png?raw=true "p5")
 
 4-	 The control can be added manually to your site toolbox by adding the following rendering to your site:
 
