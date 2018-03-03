@@ -28,7 +28,7 @@ In order for the user to be able to use our module, he has to specify a key for 
 
 After that, he can simply drag and drop the Directions Map from the SXA toolbox that resides under the “Interactive Maps” category and select the Maps Provider as data source.
  
-Screenshots:
+## Screenshots
 
 Setting the key for the google maps API is the first step the user should do. 
 Below is a screenshot of the location of the Map Provider setting that would have this key. It would be located at the following path:
