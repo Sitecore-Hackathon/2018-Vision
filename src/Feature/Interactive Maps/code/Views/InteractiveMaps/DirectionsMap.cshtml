@@ -1,0 +1,47 @@
+﻿@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+@model Hackathon.Feature.InteractiveMaps.Models.DirectionMapModel
+
+@if (Model.DataSourceItem == null)
+{
+    @Model.MessageIsEmpty
+}
+else
+{
+    <div @Html.Sxa().Component("direction-map")>
+        <div class="component-content" style="height: 100%; width: 100%">
+            @Model.MessageEditHere
+            <div id="@Guid.NewGuid().ToString()" class="map-canvas" style="height: 100%; width: 100%">
+
+                <div class="map-container">
+                    <div id="mapCanvas">&#160;</div>
+                    <div id="directionsPanel">
+                        <p class="center">Interactive Maps</p>
+                        <div class="directionInputs">
+
+                            <form>
+                                <p>
+                                    <span>From:</span>
+                                    <input type="text" value="" id="dirSource" />
+                                    <!-- <p class="or">[OR]</p>-->
+                                    <a href="#geoLocation" id="useGPS">Use My Current Location</a>
+                                </p>
+                                <p>
+                                    <span>To:</span>
+                                    <input type="text" value="" id="dirDestination" />
+                                </p>
+                                <a href="#getDirections" id="getDirections">Get Directions</a>
+                                <a href="#reset" id="paneReset">Clear All</a>
+                            </form>
+                        </div>
+                        <div id="directionSteps">
+                            <p class="msg">Directions:</p>
+                        </div>
+                        <a href="#toggleBtn" id="paneToggle" class="out">&lt;</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+}
